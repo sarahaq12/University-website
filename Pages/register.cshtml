@@ -1,0 +1,69 @@
+﻿@page
+
+@model registerModel
+@{
+    ViewData["Title"] = "Students Registration page";
+}
+<h1>@ViewData["Title"]</h1>
+
+	<form  method="post">
+				<div class="mb-3 mt-3">
+				<label for="email" class="label">Email:</label>
+		<input type="email" id="email" class="form-control" placeholder="Enter Your email">
+		
+				</div>
+				<div class="mb-3 mt-3">
+				<label for="Fname" class="label">First name:</label>
+		<input type="text" id="Fname" class="form-control" placeholder="Enter Your First name" required>
+
+				</div>
+				<div class="mb-3 mt-3">
+					<label for="Lname" class="label">last name:</label>
+		<input type="text" id="Lname" class="form-control" placeholder="Enter Your Last name" required>
+
+				</div>
+	<div class="mb-3 mt-3">
+		<label for="bd" class="label">Date Of Birth:</label>
+		<input type="date" id="bd" class="form-control" required>
+
+	</div>
+		<div class="mb-3 mt-3">
+			<label for="pic" class="label">photo:</label>
+			<input type="image" id="pic" class="form-control"  required>
+
+		</div>
+
+				<div class="mb-3 mt-3">
+				<label for="password" class="label">Password:</label>
+				<input type="password" class="form-control" id="password" >
+				
+				</div>
+				<div class="mb-3 mt-3">
+				<label for="confirm_password" class="label">Confirm Password:</label>
+				<input type="password" class="form-control" id="confirm_password" >
+		
+				</div>
+
+	
+	<div class="mb-3 mt-3">
+		<label for="los" class="label">level of study:</label>
+		<select id="los"class="form-control" >
+			<option value=""></option>
+			<option value="bachelor">Bachelor Dgree</option>
+			<option value="master">Master Dgree</option>
+			<option value="Diplom">Diploma Dgree</option>
+			</select>
+
+	</div>
+	<div class="mb-3 mt-3">
+		<label for="programs" class="label">Program:</label>
+		<select id="prog" class="form-control" >
+			<option value=""></option>
+			<option value="cs">Computer Science</option>
+			<option value="is">Information System</option>
+			<option value="se">Software Engneering</option>
+		</select>
+
+	</div>
+
+</form>

@@ -1,0 +1,39 @@
+﻿@page
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Thiqah University</h1>
+
+</div>
+<form  method="post">
+				<div class="mb-3 mt-3">
+				<label for="username" class="label">Username:</label>
+				<input type="text" class="form-control" id="username" placeholder="Enter Your Username" name="username" >
+				
+				</div>
+				<div class="mb-3 mt-3">
+				<label for="password" class="label">Password:</label>
+				<input type="password" class="form-control" id="password" name="password" >
+				
+				</div>
+				
+					<br>
+    <a style ="background:#d0edee;" class="btn" asp-page="/dashboard"> Login
+       </a>&nbsp; <input type="reset" style="background:#d0edee;" class="btn">&nbsp;
+
+					<br><br>
+	<p>Don't have an account? <a asp-page="/register"> Register now </a> </p>
+	<div class="row">
+					<div class="col-8">
+					</div>
+					
+					</div>
+				
+                  
+			
+		
+			</form>
